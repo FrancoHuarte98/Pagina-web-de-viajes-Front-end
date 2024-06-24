@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu lugar</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://kit.fontawesome.com/c9507940c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <header class="conteiner_header">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="home.html"> <img src="img\logo.jpg" alt=""></a>
+                </div>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="proximos_viajes.html" class="nav-menu-link">Proximos Viajes</a></li>
+                    <li class="nav-menu-item"><a href="quienes_somos.html" class="nav-menu-link">Quienes somos</a></li>
+                    <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link">Contacto</a></li>
+                </ul>
+            </nav>              
+        </header>
+        <div class="portada_home">
+            <img src="img/portada.jpg" alt="Portada">
+        </div>
+        
+        <div class="container_card-primary">
+            <div class="card_primary">
+                <div class="text">
+                    <h1>La experiencia de tu vida</h1>
+                    <h2>Para nosotros viajar es mucho mas que visitar un nuevo destino: es hacer nuevos amigos y vivir momentos inolvidables</h2> 
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo">Destacados</h2>
+        <div class="viaje_destacados">
+            <div class="conteiner_card">
+                <img src="img\img-iguazu.jpg" alt="">
+                <h3>Cataratas del Iguazu</h3>
+                <p>¡Viajamos en grupo a Iguazu! Una de las Siete Maravillas Naturales del Mundo, los saltos de agua más impactantes del planeta dentro de la selva misionera.</p>
+                <a href="proximos_viajes.html" class="btn_text-about btn_text">Saber Más</a>
+            </div>
+            <div class="conteiner_card">
+                <img src="img\Img-el-calafate.jpg" alt="">
+                <h3>El Calafate</h3>
+                <p>Tierra de glaciares y hogar del imponente Perito Moreno, increíbles paisajes patagónicos formados de hielo y nieves eternas.</p>
+                <a href="proximos_viajes.html" class="btn_text-about btn_text" >Saber Más</a>
+            </div>
+            <div class="conteiner_card">
+                <img src="img\img-salta.jpg" alt="">
+                <h3>Salta</h3>
+                <p>¡Viajamos en grupo al Norte! Hogar de paisajes pintorescos, gastronomía única, peñas folklóricas y gente maravillosa. Destino mágico sin igual.</p>
+                <a href="proximos_viajes.html" class="btn_text-about btn_text">Saber Más</a>
+            </div>
+        </div>
+        <div class="container_form">
+            
+            <form id="form">
+                <label for="nombre">Ciudad:</label>
+                    <select name="ciudad" id="ciudad" >
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="San Carlos de Bariloche">San Carlos de Bariloche</option>
+                        <option value="Esquel">Esquel</option>
+                        <option value="Cataratas del iguazu">Cataratas del iguazu</option>
+                        <option value="Fiambala">Fiambala</option>
+                        <option value="El calafate">El calafate</option>
+                        <option value="Salta">Salta</option>
+                        <option value="Ushuaia">Ushuaia</option>
+                        <option value="Valle de la luna y talampaya">Valle de la luna y talampaya</option>
+                    </select>
+                <label for="edad">Edad recomendada:</label>
+                    <input type="text" name="edad" id="edad" />
+                <label for="precio">Precio por persona:</label>
+                    <input id="precio" type="text" name="precio" value="" />
+                <label for="excursion">Excursion estrella:</label>
+                    <input id="excursion" type="text" name="excursion" value="" />
+                <label for="mes">Mes mas concurrido:</label>
+                <select name="mes" id="mes" >
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>  
+                <label for="temperatura">Temperatura:</label>
+                    <input id="temperatura" type="text" name="temperatura" value=""/>  
+                <div class="container_button">
+                    <input class="btn-form" id="btn-table-agregar" type="submit" value="Agregar">
+                    <input class="btn-form" id="btn-table-eliminar" type="submit" value="Eliminar">
+                    <input class="btn-form" id="btn-table-vaciar" type="submit" value="Vaciar tabla">
+                    <input class="btn-form" id="btn-table-agregarx3" type="submit" value="Agregar x3 aleatoriamente">
+                </div>
+                <p id="mensaje"></p>
+            </form>  
+        </div>
+        <div class="container_tabla">
+            <h2>Comparador de destinos</h2>
+            <p>Te ayudamos a elegir!</p>
+            <table id="tablaComparadora">
+                
+            </table>
+        </div>
+        <div class="fin-pagina">
+            <img src="img/fin-pagina.jpg" alt="">
+        </div>
+        
+        <footer>
+            <div class="container_foot">
+                <div class="box_footer">
+                    <h2>Horizonte Viajes</h2>
+                    <a href="proximos_viajes.html">Proximos Viajes</a>
+                    <a href="quienes_somos.html">Quienes somos</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="box_footer">
+                    <h2>Contacto</h2>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i> +549-4582676</a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> Nuestrolugar@gmail.com</a>
+                </div>
+                <div class="box_footer">
+                    <h2>Seguinos</h2>
+                    <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="box_copyright">
+                <p>Todos los derechos reservados © 2023 <b>FApage</b></p>
+             </div>
+        </footer> 
+        <script src="js/navMenu.js"></script>
+        <script src="js/main.js"></script>
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

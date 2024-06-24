@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu lugar</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://kit.fontawesome.com/c9507940c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="conteiner_header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="home.html"> <img src="img\logo.jpg" alt=""></a>
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="proximos_viajes.html" class="nav-menu-link">Proximos Viajes</a></li>
+                <li class="nav-menu-item"><a href="quienes_somos.html" class="nav-menu-link">Quienes somos</a></li>
+                <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link">Contacto</a></li>
+            </ul>
+        </nav>              
+    </header>
+
+    <div class="container_title">
+        <p>¿Todavía tienes dudas?</p>
+        <h1>Contacto</h1>
+    </div>
+    <div class="container_contacto">
+        <div class="container_form">
+            
+            <form id="form">
+                <h4>Envíanos un mensaje</h4>
+                <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" value="" required/>
+                <label for="email">Mail:</label>
+                    <input type="email" name="email" id="email" required>
+                <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" name="asunto" value="" required/>
+                <label for="telefono">Telefono:</label>
+                    <input id="telefono" type="text" name="telefono" value="">
+                <label for="consulta">Consulta:</label>
+                    <textarea name="" id="" cols="40" rows="4"></textarea>
+                <div class="container_captcha">
+                    <div class="box_captcha">
+                        <ul class="listado-letras">
+    
+                        </ul>       
+                    </div>
+                    <button id="btn-refresh"><i class="fa fa-refresh"></i></button>
+                </div>
+                <input type="text" id="captcha" placeholder="Introduce el captcha" value="">
+    
+    
+                <input class="btn-form" id="btn-enviar" type="submit" value="Enviar">
+                <p id="mensaje"></p>
+            </form>  
+        </div>
+    
+        <div class="container_informacion">
+            <div class="container_redes_sociales">
+                <h6>Escribenos</h6>
+                <a href="">Horizonte@gmail.com</a>
+                <h6>Siguenos en las redes</h6>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="container_telefonos">
+                <a href=""><i class="fa-brands fa-whatsapp"></i> +549-4582676</a>
+                <a href=""><i class="fa-sharp fa-solid fa-phone"></i> (011) 5235-3810</a>
+                <p>Horario de atención: Lunes a Viernes de 10 a 19hs.</p>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <footer>
+        <div class="container_foot">
+            <div class="box_footer">
+                <h2>Horizonte Viajes</h2>
+                <a href="proximos_viajes.html">Proximos Viajes</a>
+                <a href="quienes_somos.html">Quienes somos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="box_footer">
+                <h2>Contacto</h2>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i> +549-4582676</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> Horizonte@gmail.com</a>
+            </div>
+            <div class="box_footer">
+                <h2>Seguinos</h2>
+                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="box_copyright">
+            <p>Todos los derechos reservados © 2023 <b>FApage</b></p>
+         </div>
+    </footer>
+    <script src="js/captcha.js"></script>
+    <script src="js/navMenu.js"></script>
+    
+</body>
+</html>
